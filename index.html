@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="jquery-2.2.0.js"></script>
+<script type="text/javascript" src="jquery.cycle.all.js"></script>
+<script type="text/javascript">
+$('#slider').cycle({ 
+    fx:     'scrollHorz', 
+    speed:  'slow', 
+    timeout: 2000, 
+    next:   '#next', 
+    prev:   '#prev' 
+});
+</script>
+<title>INDEXPAGE</title>
+<style type="text/css">
+* {padding:0; margin:0;}
+body {background-color:#FFF;}
+a {
+	color: #FFF;
+}
+#wrapper {width:100%; height:auto; margin:auto;}
+header 
+{
+	width: 1365px;
+	height: 100px;
+	margin: auto;
+	box-shadow: 0 1px 3px #E2E2E2;
+	-webkit-box-shadow: 0 1px 3px #E2E2E2;
+	background-color: #FF9648;
+}
+
+header #headerContainer {
+	width: 100%;
+	max-width: 960px;
+background-color:;
+	margin-right: 5%;
+	margin-left: 20%;
+}
+
+#brand {
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 100px;
+	color: #FFF;
+	margin-left: 2px;
+}
+nav {width:100%; text-align:center;}
+nav ul {
+float:right;
+list-style-type:none;
+line-height:100px; margin-top:-100px;}
+nav li {float:right;}
+#hero {
+	display: block;
+	height: 520px;
+	width: 1356px;
+}
+nav a {text-decoration:none; margin-left:30px; margin-right:-20px;}
+nav a:hover {}
+body,td,th {
+	font-family: Bruss;
+	color: #000;
+}
+#logo {
+	position: absolute;
+	left: 32px;
+	top: -2px;
+	width: 106px;
+	height: 103px;
+	z-index: 1;
+}
+#apDiv1 {
+	position: absolute;
+	left: 161px;
+	top: 37px;
+	width: 146px;
+	height: 26px;
+	z-index: 2;
+}
+#container {
+	overflow: auto;
+	height: 520px;
+	width: 1356px;
+}
+#slider {
+	display: block;
+	float: left;
+	height: 525px;
+	width: 1368px;
+	overflow: hidden;
+	position: absolute;
+	left: -2px;
+	top: 100px;
+}
+
+
+
+#next {
+	background-image: url(right%20arrow.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	float: right;
+	height: 563px;
+	width: 100px;
+	position: relative;
+	z-index: 999;
+	cursor:pointer;
+}
+
+#left {
+	background-image: url(Arrow-Left-icon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: block;
+	float: left;
+	height: 563px;
+	width: 100px;
+	position: relative;
+	z-index: 999;
+	cursor:pointer;
+}
+
+</style>
+</head>
+
+
+<body>
+<div id="logo"><a href="ABOUT US.HTML"><img src="22688732_1759194931043980_6147264822313798157_n.jpg" width="108" height="102" alt="logo"></div>
+<div id="wrapper">
+<!--WRAPPER-->
+<header><!--HEADER-->
+<div id="headerContainer"><!--HEADER--CONTAINER-->
+<div id="brand"><a href="MENU.html">MEZCLA</a></div>
+<nav>
+<ul>
+<li><a href="#"><a href="https://www.instagram.com/mezclaburritos/"><img src="IG.png" alt="IG" width="40" height="40" align="right"></a></li>
+<li><a href="#"><a href="https://www.facebook.com/mezclaburritos/"><img src="FB.png" alt="IG" width="40" height="40" align="left"></a></li>
+<li><a href="CONTACT US.HTML">CONTACT US</a></li>
+<li><a href="FEEDBACK.HTML">FEEDBACK</a></li>
+<li><a href="ABOUT US.HTML">ABOUT US</a></li>
+<li><a href="index.html">PROMOTIONS</a></li>
+<li><a href="WHATS NEW.HTML">WHAT'S NEW</a></li>
+<li><a href="MENU.HTML">MENU</a></li>
+
+</ul>
+</nav>
+</div><!--END--HEADER--CONTAINER-->
+</header><!--END--HEADER-->
+
+<div id="hero" ><!--IMAGE--SLIDER-->
+<div id="container">
+<div class="controller" id="next"></div>
+<div class="controller" id="left"></div>
+<div id="slider">
+<img src="MONDAY BANNER.jpg" width="1370" height="525" alt="image1">
+<img src="TUESDAY.jpg" width="1370" height="525" alt="image2">
+<img src="THURSDAY.jpg" width="1370" height="525" alt="image3">
+<img src="FRIDAY.jpg" width="1370" height="525" alt="image">
+</div><!--END--IMAGE--SLIDER--></div>
+</div>
+<img src="COPYRIGHT.png" width="1367" height="40" alt="FOOTER">
+
+</body>
+</html>
