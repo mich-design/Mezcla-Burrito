@@ -2,25 +2,19 @@
 <html>
 <head>
 <meta charset="utf-8">
-<script type="text/javascript" src="jquery-2.2.0.js"></script>
-<script type="text/javascript" src="jquery.cycle.all.js"></script>
-<script type="text/javascript">
-$('#slider').cycle({ 
-    fx:     'scrollHorz', 
-    speed:  'slow', 
-    timeout: 2000, 
-    next:   '#next', 
-    prev:   '#prev' 
-});
-</script>
-<title>INDEXPAGE</title>
+<title>HOMEPAGE</title>
 <style type="text/css">
 * {padding:0; margin:0;}
 body {background-color:#FFF;}
 a {
 	color: #FFF;
 }
-#wrapper {width:100%; height:auto; margin:auto;}
+#wrapper {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	position: relative;
+}
 header 
 {
 	width: 1365px;
@@ -29,16 +23,16 @@ header
 	box-shadow: 0 1px 3px #E2E2E2;
 	-webkit-box-shadow: 0 1px 3px #E2E2E2;
 	background-color: #FF9648;
+	position: absolute;
 }
 
 header #headerContainer {
 	width: 100%;
 	max-width: 960px;
+	margin: auto;
 background-color:;
-	margin-right: 5%;
-	margin-left: 20%;
+	position: relative;
 }
-
 #brand {
 	font-size: 40px;
 	font-weight: bold;
@@ -46,19 +40,36 @@ background-color:;
 	color: #FFF;
 	margin-left: 2px;
 }
-nav {width:100%; text-align:center;}
+nav {
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
 nav ul {
-float:right;
-list-style-type:none;
-line-height:100px; margin-top:-100px;}
-nav li {float:right;}
+	float: right;
+	list-style-type: none;
+	line-height: 100px;
+	margin-top: -100px;
+	position: relative;
+}
+nav li {
+	float: right;
+	position: relative;
+}
 #hero {
 	display: block;
 	height: 520px;
 	width: 1356px;
 }
-nav a {text-decoration:none; margin-left:30px; margin-right:-20px;}
-nav a:hover {}
+nav a {
+	margin-left: 30px;
+	margin-right: -20px;
+	position: relative;
+	text-decoration: none;
+}
+nav a:hover {
+	position: relative;
+}
 body,td,th {
 	font-family: Bruss;
 	color: #000;
@@ -71,18 +82,16 @@ body,td,th {
 	height: 103px;
 	z-index: 1;
 }
-#apDiv1 {
-	position: absolute;
-	left: 161px;
-	top: 37px;
-	width: 146px;
-	height: 26px;
-	z-index: 2;
-}
 #container {
 	overflow: auto;
-	height: 520px;
-	width: 1356px;
+	height: 620px;
+	width: 1365px;
+	top: auto;
+	left: auto;
+	right: auto;
+	bottom: auto;
+	background-color: #FF8224;
+	background-image: url(BG.png);
 }
 #slider {
 	display: block;
@@ -122,13 +131,39 @@ body,td,th {
 	z-index: 999;
 	cursor:pointer;
 }
-
+#apDiv13 {
+	position: absolute;
+	left: -3px;
+	top: 593px;
+	width: 1365px;
+	height: 30px;
+	z-index: 14;
+}
+#apDiv1 {
+	position: absolute;
+	left: 32px;
+	top: 170px;
+	width: 380px;
+	height: 380px;
+	z-index: 15;
+}
+#apDiv2 {
+	position: absolute;
+	left: 464px;
+	top: 173px;
+	width: 850px;
+	height: 380px;
+	z-index: 16;
+}
 </style>
 </head>
 
 
 <body>
-<div id="logo"><a href="ABOUT US.HTML"><img src="22688732_1759194931043980_6147264822313798157_n.jpg" width="108" height="102" alt="logo"></div>
+<div id="logo"><img src="22688732_1759194931043980_6147264822313798157_n.jpg" width="108" height="102" alt="logo"></div>
+<div id="apDiv13"><img src="COPYRIGHT.png" width="1368" height="30" alt="footer"></div>
+<div id="apDiv1"><a href="BURRITO.HTML"><img src="T7.jpg" width="380" height="380" alt="T7"></a></div>
+<div id="apDiv2"><img src="D7.jpg" width="850" height="380" alt="D7"></div>
 <div id="wrapper">
 <!--WRAPPER-->
 <header><!--HEADER-->
@@ -143,24 +178,14 @@ body,td,th {
 <li><a href="index.html">PROMOTIONS</a></li>
 <li><a href="WHATS NEW.HTML">WHAT'S NEW</a></li>
 <li><a href="MENU.HTML">MENU</a></li>
-
 </ul>
 </nav>
 </div><!--END--HEADER--CONTAINER-->
 </header><!--END--HEADER-->
 
-<div id="hero" ><!--IMAGE--SLIDER-->
-<div id="container">
-<div class="controller" id="next"></div>
-<div class="controller" id="left"></div>
-<div id="slider">
-<img src="MONDAY BANNER.jpg" width="1370" height="525" alt="image1">
-<img src="TUESDAY.jpg" width="1370" height="525" alt="image2">
-<img src="THURSDAY.jpg" width="1370" height="525" alt="image3">
-<img src="FRIDAY.jpg" width="1370" height="525" alt="image">
-</div><!--END--IMAGE--SLIDER--></div>
-</div>
-<img src="COPYRIGHT.png" width="1367" height="40" alt="FOOTER">
-
+<div id="hero" >
+<div id="container"></div>
 </body>
 </html>
+
+
